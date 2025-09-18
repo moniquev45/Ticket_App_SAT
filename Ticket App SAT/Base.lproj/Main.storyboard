@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Ticket_App_SAT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQO-dT-R9k">
+                                <rect key="frame" x="217" y="581" width="143" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Login">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXS-gc-E25"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MELBOURNE THEATRE SHOW TICKETS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWN-Dc-9ag">
+                                <rect key="frame" x="16" y="95" width="361" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WrF-A2-EkK">
+                                <rect key="frame" x="168" y="346" width="192" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hR4-dV-crl">
+                                <rect key="frame" x="168" y="418" width="192" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrG-tj-xgU">
+                                <rect key="frame" x="32" y="351" width="128" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb8-HZ-Yyk">
+                                <rect key="frame" x="32" y="422" width="128" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCE-D5-LuJ">
+                                <rect key="frame" x="32" y="581" width="143" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Create Account">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnCreateAcccountDirect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x0I-sq-g92"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.85567782879605137" blue="0.94358240611495858" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtPassword" destination="hR4-dV-crl" id="oSh-NA-MvE"/>
+                        <outlet property="txtUsername" destination="WrF-A2-EkK" id="Rua-Oz-VvW"/>
+                        <segue destination="3wy-ba-tBL" kind="presentation" identifier="createAccountDirectChange" modalPresentationStyle="fullScreen" id="bnF-K3-JE5"/>
+                        <segue destination="o3g-JZ-HCC" kind="presentation" identifier="loginToHomePageChange" modalPresentationStyle="fullScreen" id="b3d-51-UwM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="3"/>
+        </scene>
+        <!--AddTicketViewController-->
+        <scene sceneID="q0b-4U-wUf">
+            <objects>
+                <viewController storyboardIdentifier="AddTicketViewController" title="AddTicketViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="efJ-77-rb6" customClass="AddTicketViewController" customModule="Ticket_App_SAT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PSj-mV-afy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnu-qH-UB9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85242831829999999" green="0.65676018940000003" blue="0.77630212099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="TQW-2n-37B">
+                                <rect key="frame" x="333" y="5" width="71" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-Qe-JeQ">
+                                <rect key="frame" x="20" y="171" width="139" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADD TICKET" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4J-pG-nDb">
+                                <rect key="frame" x="102" y="100" width="211" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opening Night:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsL-er-dLU">
+                                <rect key="frame" x="20" y="203" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Closing Night:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msi-IY-c4E">
+                                <rect key="frame" x="20" y="243" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seat Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNI-aC-7Uq">
+                                <rect key="frame" x="20" y="298" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price: $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx7-bk-imQ">
+                                <rect key="frame" x="20" y="336" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP3-Ii-csh">
+                                <rect key="frame" x="20" y="395" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl3-hq-e1F">
+                                <rect key="frame" x="20" y="452" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Theatre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvu-RB-6L0">
+                                <rect key="frame" x="20" y="490" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Theatre (if other):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6b-kT-5zp">
+                                <rect key="frame" x="20" y="567" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBR-d2-dld">
+                                <rect key="frame" x="24" y="605" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2bC-Vt-QmP">
+                                <rect key="frame" x="183" y="166" width="211" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWM-er-Kyg">
+                                <rect key="frame" x="141" y="296" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YYYY/MM/DD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mcy-uB-69m">
+                                <rect key="frame" x="183" y="203" width="211" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YYYY/MM/DD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puv-cg-cjN">
+                                <rect key="frame" x="183" y="241" width="211" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lS6-so-guN">
+                                <rect key="frame" x="0.0" y="528" width="414" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Regent"/>
+                                    <segment title="Her Majesty"/>
+                                    <segment title="Arts Centre"/>
+                                    <segment title="Princess"/>
+                                    <segment title="Other"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37J-Zf-BUK">
+                                <rect key="frame" x="141" y="334" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W3U-JJ-qvR">
+                                <rect key="frame" x="141" y="450" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWm-Pa-qV6">
+                                <rect key="frame" x="208" y="565" width="186" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZsR-zw-YWM">
+                                <rect key="frame" x="163" y="607" width="231" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wlO-7z-V2P">
+                                <rect key="frame" x="157" y="420" width="211" height="265"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1j-l1-dfj">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Comedy ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Comedy ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnComedyAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="nYn-NE-Eoh"/>
+                                            <action selector="btnComedyAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="HOZ-YN-zl9"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0R-ZN-i43">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="  Drama  ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnDramaAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="faj-hU-z78"/>
+                                            <action selector="btnDramaAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="tnn-nv-ZGX"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MO3-D2-chi">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Romance">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnRomanceAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="OtJ-ZX-Rn7"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv0-an-VFG">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" JukeBox ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnJukeBoxAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="siC-YI-S3i"/>
+                                            <action selector="btnJukeboxAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="SEX-bL-2rh"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wj9-gn-mOy">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Rock/Pop">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnRockPopAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="5Sf-kE-0AF"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPz-Jy-q0I">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Fantasy ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnFantasyAddButton:" destination="efJ-77-rb6" eventType="touchUpInside" id="uAN-bc-Xas"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TM-jW-57G">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Disney ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnDisneyAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="SdW-dX-VhT"/>
+                                            <action selector="btnDisneyAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="bOT-uc-2Ar"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgH-UH-TJ3">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Historical">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnHistoricalAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="dm0-uj-JcT"/>
+                                            <action selector="btnHistoricalAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="OzD-hw-eOR"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMD-cH-8gw">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="  Other  ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnOtherAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="ToG-SX-lGx"/>
+                                            <action selector="btnOtherAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="OVj-EB-ceu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="doI-su-0Be"/>
+                                    <constraint firstAttribute="width" secondItem="wlO-7z-V2P" secondAttribute="height" multiplier="211:265" id="keL-PR-xap"/>
+                                    <constraint firstAttribute="width" constant="211" id="lon-UO-k7h"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIK-dg-gsq">
+                                <rect key="frame" x="157" y="395" width="211" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39215683940000001" green="0.062745101750000004" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39215683940000001" green="0.062745101750000004" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="                  Genre                  ">
+                                            <attributes>
+                                                <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnGenreAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="P3c-nN-X0T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIl-uv-VnL">
+                                <rect key="frame" x="91" y="681" width="64" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39215683940000001" green="0.062745101750000004" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Clear">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39215683940000001" green="0.062745101750000004" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnClearAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="WiD-jd-0kz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNN-Zf-rlT">
+                                <rect key="frame" x="24" y="681" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39215683940000001" green="0.062745101750000004" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39215683940000001" green="0.062745101750000004" blue="0.52549022440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnAdd:" destination="efJ-77-rb6" eventType="touchUpInside" id="jrw-3P-Raq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E66-Fk-IM7">
+                                <rect key="frame" x="323" y="67" width="91" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PROFILE">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnAddTicketToProfile:" destination="efJ-77-rb6" eventType="touchUpInside" id="mUI-be-vpu"/>
+                                    <action selector="btnSendToProfileHomePage:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="9j1-8t-df7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYq-hM-2v4">
+                                <rect key="frame" x="6" y="5" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt; Back"/>
+                                <connections>
+                                    <action selector="btnAddTicketBackToHomepage:" destination="efJ-77-rb6" eventType="touchUpInside" id="lXD-WL-cH3"/>
+                                    <segue destination="o3g-JZ-HCC" kind="presentation" identifier="addTicketToHomepage" id="mY8-bj-9zs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ltz-Mg-K41"/>
+                        <color key="backgroundColor" red="0.97647058959999999" green="0.85490196939999996" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wlO-7z-V2P" firstAttribute="centerX" secondItem="PSj-mV-afy" secondAttribute="centerX" constant="55.5" id="Wb5-dS-Boq"/>
+                            <constraint firstItem="wlO-7z-V2P" firstAttribute="centerY" secondItem="PSj-mV-afy" secondAttribute="centerY" constant="184.5" id="kEp-oc-n1h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnComedyAddStackView" destination="K1j-l1-dfj" id="eqG-bi-KF8"/>
+                        <outlet property="btnDisneyAddStackView" destination="3TM-jW-57G" id="VXW-4u-jHh"/>
+                        <outlet property="btnDramaAddStackView" destination="w0R-ZN-i43" id="wU2-aZ-ZMg"/>
+                        <outlet property="btnFantasyAddStackView" destination="ZPz-Jy-q0I" id="7dj-2C-KHU"/>
+                        <outlet property="btnGenreLable" destination="mIK-dg-gsq" id="Fes-k5-lzt"/>
+                        <outlet property="btnHistoricalAddStackView" destination="wgH-UH-TJ3" id="aX0-oA-ocj"/>
+                        <outlet property="btnJukeBoxAddStackView" destination="pv0-an-VFG" id="Z5J-L0-jwh"/>
+                        <outlet property="btnOtherAddStackView" destination="lMD-cH-8gw" id="Qbd-aA-sPO"/>
+                        <outlet property="btnRockPopAddStackView" destination="wj9-gn-mOy" id="hMd-9M-rLI"/>
+                        <outlet property="btnRomanceAddStackView" destination="MO3-D2-chi" id="wbg-TX-99q"/>
+                        <outlet property="segTheatreAdd" destination="lS6-so-guN" id="3RM-K6-Rtz"/>
+                        <outlet property="stackViewGenreAdd" destination="wlO-7z-V2P" id="tDk-n9-Pex"/>
+                        <outlet property="txtClosingNightAdd" destination="puv-cg-cjN" id="oS3-iq-jDa"/>
+                        <outlet property="txtDescriptionAdd" destination="ZsR-zw-YWM" id="XS0-vi-Yib"/>
+                        <outlet property="txtLocationAdd" destination="W3U-JJ-qvR" id="EKi-8T-M1z"/>
+                        <outlet property="txtOpeningNightAdd" destination="mcy-uB-69m" id="lKQ-aH-w7m"/>
+                        <outlet property="txtPriceAdd" destination="37J-Zf-BUK" id="RXE-pq-O3Y"/>
+                        <outlet property="txtSeatTypeAdd" destination="HWM-er-Kyg" id="oTS-o1-HEo"/>
+                        <outlet property="txtShowTitleAdd" destination="2bC-Vt-QmP" id="O1H-HD-kVI"/>
+                        <outlet property="txtTheatreOtherAdd" destination="uWm-Pa-qV6" id="pne-GM-aEG"/>
+                        <outletCollection property="btnGenreAddButtons" destination="K1j-l1-dfj" collectionClass="NSMutableArray" id="7Rz-IU-F9j"/>
+                        <outletCollection property="btnGenreAddButtons" destination="w0R-ZN-i43" collectionClass="NSMutableArray" id="Ptp-as-EUQ"/>
+                        <outletCollection property="btnGenreAddButtons" destination="MO3-D2-chi" collectionClass="NSMutableArray" id="6CL-He-bjg"/>
+                        <outletCollection property="btnGenreAddButtons" destination="pv0-an-VFG" collectionClass="NSMutableArray" id="8Ll-6S-1Kv"/>
+                        <outletCollection property="btnGenreAddButtons" destination="wj9-gn-mOy" collectionClass="NSMutableArray" id="iQ9-1D-dSg"/>
+                        <outletCollection property="btnGenreAddButtons" destination="ZPz-Jy-q0I" collectionClass="NSMutableArray" id="1Do-ne-b5r"/>
+                        <outletCollection property="btnGenreAddButtons" destination="3TM-jW-57G" collectionClass="NSMutableArray" id="50F-nd-fEg"/>
+                        <outletCollection property="btnGenreAddButtons" destination="wgH-UH-TJ3" collectionClass="NSMutableArray" id="GTg-bK-TMU"/>
+                        <outletCollection property="btnGenreAddButtons" destination="lMD-cH-8gw" collectionClass="NSMutableArray" id="FI2-bR-wH1"/>
+                        <segue destination="Quq-Dv-19Z" kind="presentation" identifier="addTicketDataToProfilePage" id="Dd0-2p-fg0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JaM-Sv-VLy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="1435"/>
+        </scene>
+        <!--TicketBudgetingViewController-->
+        <scene sceneID="QIh-Jb-Ri3">
+            <objects>
+                <viewController storyboardIdentifier="TicketBudgetingViewController" title="TicketBudgetingViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LgE-kw-qpk" customClass="TicketBudgetingViewController" customModule="Ticket_App_SAT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iX9-kn-SPY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-Oz-VWv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85242831829999999" green="0.65676018940000003" blue="0.77630212099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="7jo-3q-aty">
+                                <rect key="frame" x="333" y="8" width="71" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TICKET BUDGETING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyN-w9-ieu">
+                                <rect key="frame" x="35" y="100" width="345" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$Min:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w63-cc-LPV">
+                                <rect key="frame" x="20" y="160" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Shows In Budget:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75D-Th-eCS">
+                                <rect key="frame" x="20" y="588" width="237" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUm-Mh-bcW">
+                                <rect key="frame" x="265" y="588" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Average Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeF-64-XSY">
+                                <rect key="frame" x="20" y="626" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="to $Max:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybm-Mm-36R">
+                                <rect key="frame" x="188" y="159" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wfY-90-AJI">
+                                <rect key="frame" x="83" y="157" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ur-gg-Q2R">
+                                <rect key="frame" x="283" y="158" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUD-Sc-2Eb">
+                                <rect key="frame" x="302" y="200" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Search">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSearchBudget:" destination="LgE-kw-qpk" eventType="touchUpInside" id="i1Y-Jo-sHi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnO-Zn-Z4g">
+                                <rect key="frame" x="307" y="681" width="87" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Clear All">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnClearAllBudget:" destination="LgE-kw-qpk" eventType="touchUpInside" id="5Tq-o9-v2M"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hh3-lT-VRT">
+                                <rect key="frame" x="11" y="243" width="392" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="oTm-W3-nNv">
+                                        <rect key="frame" x="0.0" y="50" width="392" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTm-W3-nNv" id="1Cy-4E-POv">
+                                            <rect key="frame" x="0.0" y="0.0" width="392" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPf-jn-dr1">
+                                <rect key="frame" x="180" y="625" width="214" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWE-QL-dEn">
+                                <rect key="frame" x="323" y="67" width="91" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PROFILE">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnAddTicketToProfile:" destination="efJ-77-rb6" eventType="touchUpInside" id="aeA-rn-IGU"/>
+                                    <action selector="btnBudgetingTicketsToProfilePage:" destination="LgE-kw-qpk" eventType="touchUpInside" id="sTE-6g-KTA"/>
+                                    <action selector="btnSendToProfileHomePage:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="a85-3i-FKE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3t-10-Fic">
+                                <rect key="frame" x="11" y="8" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt; Back"/>
+                                <connections>
+                                    <action selector="btnBackTicketBudgeting:" destination="LgE-kw-qpk" eventType="touchUpInside" id="xbF-B6-6nl"/>
+                                    <segue destination="o3g-JZ-HCC" kind="presentation" identifier="ticketBudgetingToHomePage" id="G23-6n-Qg1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zek-yD-ISy"/>
+                        <color key="backgroundColor" red="0.97647058959999999" green="0.85490196939999996" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblAveragePrice" destination="ZPf-jn-dr1" id="MQW-Mw-2dy"/>
+                        <outlet property="lblTotalShowsInBudget" destination="eUm-Mh-bcW" id="8hc-4M-X0i"/>
+                        <outlet property="tblBudgetTickets" destination="Hh3-lT-VRT" id="Kf4-Og-BVC"/>
+                        <outlet property="txtMaxAmount" destination="5Ur-gg-Q2R" id="h1I-sC-2gc"/>
+                        <outlet property="txtMinAmount" destination="wfY-90-AJI" id="6yV-tf-Mfh"/>
+                        <segue destination="Quq-Dv-19Z" kind="presentation" identifier="ticketBudgetingToProfilePage" id="xmO-qw-D7F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYB-hT-VzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="1838"/>
+        </scene>
+        <!--AccountDetailsViewController-->
+        <scene sceneID="Twm-ac-s2x">
+            <objects>
+                <viewController storyboardIdentifier="AccountDetailsViewController" title="AccountDetailsViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Quq-Dv-19Z" customClass="AccountDetailsViewController" customModule="Ticket_App_SAT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6PI-EQ-OgH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ldk-Su-09w">
+                                <rect key="frame" x="73" y="118" width="269" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ACCOUNT DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y61-gJ-NlR">
+                                <rect key="frame" x="42" y="407" width="330" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
+                                <color key="textColor" red="0.35686278339999999" green="0.054901964960000001" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ4-mr-U29">
+                                <rect key="frame" x="20" y="475" width="139" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <color key="textColor" red="0.35686278339999999" green="0.054901964960000001" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am5-wX-cSD">
+                                <rect key="frame" x="167" y="475" width="227" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <color key="textColor" red="0.35686278339999999" green="0.054901964960000001" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDh-rT-Hjl">
+                                <rect key="frame" x="20" y="543" width="132" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <color key="textColor" red="0.35686278339999999" green="0.054901964960000001" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="characterWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMs-bx-Yyz">
+                                <rect key="frame" x="167" y="518" width="227" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <color key="textColor" red="0.35686278339999999" green="0.054901964960000001" blue="0.47450977560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8r-o7-FC5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85242831829999999" green="0.65676018940000003" blue="0.77630212099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqT-Po-2iS">
+                                <rect key="frame" x="161" y="618" width="93" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LOGOUT">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnLogout:" destination="Quq-Dv-19Z" eventType="touchUpInside" id="ebe-zw-xbu"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="accountDetailsToLogin" id="HN8-Vo-5AX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsY-go-cVo">
+                                <rect key="frame" x="8" y="8" width="77" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt; Back"/>
+                                <connections>
+                                    <action selector="btnAccountDetailsBack:" destination="Quq-Dv-19Z" eventType="touchUpInside" id="nso-KL-XQ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ftx-cy-tiE"/>
+                        <color key="backgroundColor" red="0.97647058959999999" green="0.85490196939999996" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblPasswordDisplay" destination="XMs-bx-Yyz" id="rkk-Zy-OCb"/>
+                        <outlet property="lblUsernameDisplay" destination="am5-wX-cSD" id="98W-Pu-tYw"/>
+                        <segue destination="LgE-kw-qpk" kind="presentation" identifier="profilePageToTicketBudgetingPage" id="oN0-r4-aJC"/>
+                        <segue destination="o3g-JZ-HCC" kind="presentation" identifier="profilePageToHomepage" id="BUZ-n3-LAp"/>
+                        <segue destination="efJ-77-rb6" kind="presentation" identifier="profilePageToAddTicketPage" id="8g1-jr-fLg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4eL-Ug-lbt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647.826086956522" y="1434.7826086956522"/>
+        </scene>
+        <!--HomePageViewController-->
+        <scene sceneID="Zmv-Ax-CUz">
+            <objects>
+                <viewController storyboardIdentifier="HomePageViewController" title="HomePageViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o3g-JZ-HCC" customClass="HomePageViewController" customModule="Ticket_App_SAT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EtT-0H-OqO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXX-lF-y4l">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85242831829896903" green="0.65676018937205671" blue="0.77630212099367424" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UK-fw-z90">
+                                <rect key="frame" x="103" y="91" width="104" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Price"/>
+                                <connections>
+                                    <action selector="btnPriceSelect:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="hZl-kg-cwf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWO-pe-I1U">
+                                <rect key="frame" x="310.66666666666663" y="91" width="103.66666666666663" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dates"/>
+                                <connections>
+                                    <action selector="btnDatesSelect:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="Azw-hb-Ydo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9a-Hm-nWg">
+                                <rect key="frame" x="207" y="91" width="103.66666666666663" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Theatre"/>
+                                <connections>
+                                    <action selector="btnTheatreSelect:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="nx4-fI-2UA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGE-hD-9ax">
+                                <rect key="frame" x="0.0" y="91" width="103.66666666666667" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Genres"/>
+                                <connections>
+                                    <action selector="btnGenreSelect:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="Dg7-Af-Zs1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FV9-VT-rnd">
+                                <rect key="frame" x="20" y="681" width="68" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnReset:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="ciM-1H-5xb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPi-hm-Lps">
+                                <rect key="frame" x="20" y="141" width="52" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <color key="textColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="giu-pQ-E9p">
+                                <rect key="frame" x="7" y="179" width="399" height="482"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="mte-jO-Tbh">
+                                        <rect key="frame" x="0.0" y="50" width="399" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mte-jO-Tbh" id="nQP-rb-75o">
+                                            <rect key="frame" x="0.0" y="0.0" width="399" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="APL-qs-hWJ">
+                                <rect key="frame" x="91" y="136" width="208" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWe-EA-2ZM">
+                                <rect key="frame" x="311" y="136" width="81" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Search">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSearch:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="AhX-Kn-NwQ"/>
+                                </connections>
+                            </button>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sGA-ZN-mF1">
+                                <rect key="frame" x="0.0" y="126" width="104" height="261"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQy-xY-g1U">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Comedy ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnComedyAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="n7F-eO-vGB"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4P-kY-p4i">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="  Drama  ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnDramaAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="COJ-lC-Szc"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOI-2M-fTP">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Romance">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnRomanceAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="w6L-fE-sfY"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmM-NG-VfN">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" JukeBox ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnJukeBoxAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="ICJ-FH-D5T"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEB-U8-nXp">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Rock/Pop">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnRockPopAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="8Ri-hd-otq"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwl-xR-iId">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Fantasy ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnFantasyAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="VDo-dN-0ZH"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-yx-3hi">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" Disney ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnDisneyAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="gi0-3N-R4d"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tU4-Wi-tuw">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Historical">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnHistoricalAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="Sbe-b7-aAf"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lz4-h2-3qO">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="  Other  ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnOtherAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="AJx-8k-Ym1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="6cf-pJ-iqv"/>
+                                    <constraint firstAttribute="width" secondItem="sGA-ZN-mF1" secondAttribute="height" multiplier="104:261" id="JIl-YC-TFQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="261" id="WWR-gZ-pWv"/>
+                                    <constraint firstAttribute="height" constant="261" id="Xr5-kZ-Gle"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="104" id="gMr-7A-hYr"/>
+                                </constraints>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Weq-a1-Tuz">
+                                <rect key="frame" x="103" y="126" width="104" height="133"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJm-5R-BJ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Min to Max">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnMinToMaxAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="U7G-Ef-7QT"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cze-sk-7QL">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Max to Min">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnMaxToMinAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="hOF-U5-u3H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="1aR-vR-DB4"/>
+                                    <constraint firstAttribute="width" secondItem="Weq-a1-Tuz" secondAttribute="height" multiplier="104:133" id="CSM-ci-DYK"/>
+                                    <constraint firstAttribute="width" constant="104" id="ues-uV-sqi"/>
+                                </constraints>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Aa7-tG-kL5">
+                                <rect key="frame" x="311" y="126" width="103" height="577"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsm-li-FQp">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Earliest to Latest             By Opening Night ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnEarlyToLateOpenAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="ywD-Pf-H65"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kM-mb-d3M">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Latest to Earliest              By Opening Night ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnLateToEarlyOpenAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="Fyc-Pj-f5T"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQa-dV-0MX">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Earliest to Latest             By Closing Night ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnEarlyToLateClose:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="fd8-PS-ujP"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbP-8j-ss3">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Latest to Earliest              By Closing Night ">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnLateToEarlyClose:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="Gmp-Uh-6ni"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Aa7-tG-kL5" secondAttribute="height" multiplier="103:577" id="TXt-4i-5Pb"/>
+                                    <constraint firstAttribute="width" constant="103" id="V4u-sd-L2H"/>
+                                    <constraint firstAttribute="height" constant="577" id="f3b-UD-tkF"/>
+                                </constraints>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="exV-VK-BpP">
+                                <rect key="frame" x="207" y="126" width="104" height="364"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsM-HH-Y0q">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Regent Theatre">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnRegentTheatreAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="T0Y-ga-Mfr"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHA-Z5-Tgp">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Arts Centre Melbourne">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnArtsCentreAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="73R-fb-uHu"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGa-6y-Ruy">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Her Majesty's Theatre">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnHerMajestyAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="GJ0-P4-Zzx"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWe-JU-LHe">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="The Princess Theatre">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnPrincessTheatreAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="T4K-xZ-UKV"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1y-V2-e9w">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="0.0"/>
+                                        <color key="tintColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.71764707569999997" green="0.4941176176" blue="0.79215681550000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Other">
+                                                    <attributes>
+                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnTheatreOtherAction:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="XMe-C3-VhS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="364" id="dGh-sE-n1I"/>
+                                    <constraint firstAttribute="width" constant="104" id="fgt-OY-OIk"/>
+                                    <constraint firstAttribute="width" secondItem="exV-VK-BpP" secondAttribute="height" multiplier="2:7" id="lAq-X0-Oey"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePicture.png" translatesAutoresizingMaskIntoConstraints="NO" id="ymc-P5-Tpw">
+                                <rect key="frame" x="333" y="5" width="71" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVE-QZ-jgX">
+                                <rect key="frame" x="7" y="13" width="133" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TICKET BUDGETING">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSendToTicketBudgeting:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="qIb-Ex-a3g"/>
+                                    <segue destination="LgE-kw-qpk" kind="presentation" identifier="homepageToTicketBudgeting" id="MhB-tp-3vl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR6-hj-IPF">
+                                <rect key="frame" x="221" y="13" width="98" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ADD TICKETS">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSendToAddTickets:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="Ebz-O8-OmI"/>
+                                    <segue destination="efJ-77-rb6" kind="presentation" identifier="homepageToAddTickets" id="owl-ri-NyC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwd-s0-oi4">
+                                <rect key="frame" x="323" y="61" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607843139999999" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PROFILE">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSendToProfileHomePage:" destination="o3g-JZ-HCC" eventType="touchUpInside" id="8nB-88-ZXE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nwe-DV-CiG"/>
+                        <color key="backgroundColor" red="1" green="0.85490196078431369" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Weq-a1-Tuz" firstAttribute="centerY" secondItem="EtT-0H-OqO" secondAttribute="centerY" constant="-175.5" id="3j5-ss-zqf"/>
+                            <constraint firstItem="Aa7-tG-kL5" firstAttribute="centerX" secondItem="EtT-0H-OqO" secondAttribute="centerX" constant="155.5" id="4H2-wi-Hz4"/>
+                            <constraint firstItem="sGA-ZN-mF1" firstAttribute="centerX" secondItem="EtT-0H-OqO" secondAttribute="centerX" constant="-155" id="6PR-uB-2ZN"/>
+                            <constraint firstItem="Weq-a1-Tuz" firstAttribute="centerX" secondItem="EtT-0H-OqO" secondAttribute="centerX" constant="-52" id="B9R-6y-2g7"/>
+                            <constraint firstItem="exV-VK-BpP" firstAttribute="centerY" secondItem="EtT-0H-OqO" secondAttribute="centerY" constant="-60" id="EQU-tN-zeo"/>
+                            <constraint firstItem="Weq-a1-Tuz" firstAttribute="centerX" secondItem="EtT-0H-OqO" secondAttribute="centerX" constant="-52" id="IpC-L0-tOt"/>
+                            <constraint firstItem="exV-VK-BpP" firstAttribute="centerX" secondItem="EtT-0H-OqO" secondAttribute="centerX" constant="52" id="O3l-57-qEr"/>
+                            <constraint firstItem="sGA-ZN-mF1" firstAttribute="centerY" secondItem="EtT-0H-OqO" secondAttribute="centerY" constant="-111.5" id="bep-pk-LMp"/>
+                            <constraint firstItem="Weq-a1-Tuz" firstAttribute="centerY" secondItem="EtT-0H-OqO" secondAttribute="centerY" constant="-175.5" id="eRu-DO-ChK"/>
+                            <constraint firstItem="Aa7-tG-kL5" firstAttribute="centerY" secondItem="EtT-0H-OqO" secondAttribute="centerY" constant="46.5" id="iL3-BV-2tr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddTicketButton" destination="VR6-hj-IPF" id="KVr-DQ-s2v"/>
+                        <outlet property="btnArtsCentre" destination="eHA-Z5-Tgp" id="AYQ-pF-XeF"/>
+                        <outlet property="btnComedy" destination="PQy-xY-g1U" id="Hnm-Ye-wSI"/>
+                        <outlet property="btnDisney" destination="zEc-yx-3hi" id="SHK-ag-T4q"/>
+                        <outlet property="btnDrama" destination="c4P-kY-p4i" id="Il6-kx-P4z"/>
+                        <outlet property="btnEarlyToLateClose" destination="mQa-dV-0MX" id="OG7-22-utX"/>
+                        <outlet property="btnEarlyToLateOpen" destination="Lsm-li-FQp" id="DK1-3u-zz9"/>
+                        <outlet property="btnFantasy" destination="gwl-xR-iId" id="ICZ-gP-hLQ"/>
+                        <outlet property="btnHerMajesty" destination="jGa-6y-Ruy" id="5Zh-xc-TOJ"/>
+                        <outlet property="btnHistorical" destination="tU4-Wi-tuw" id="Vfi-4U-qWs"/>
+                        <outlet property="btnJukeBox" destination="tmM-NG-VfN" id="tMN-hV-xiO"/>
+                        <outlet property="btnLateToEarlyClose" destination="ZbP-8j-ss3" id="vcX-3H-xVi"/>
+                        <outlet property="btnLateToEarlyOpen" destination="4kM-mb-d3M" id="NeQ-yx-AMX"/>
+                        <outlet property="btnMaxToMin" destination="cze-sk-7QL" id="KSE-sg-t6t"/>
+                        <outlet property="btnMinToMax" destination="zJm-5R-BJ8" id="J5O-LM-aUE"/>
+                        <outlet property="btnOther" destination="Lz4-h2-3qO" id="Sbn-aM-acM"/>
+                        <outlet property="btnPrincessTheatre" destination="LWe-JU-LHe" id="qsg-o4-Pyo"/>
+                        <outlet property="btnRegentTheatre" destination="hsM-HH-Y0q" id="Cp0-OE-uEn"/>
+                        <outlet property="btnRockPop" destination="jEB-U8-nXp" id="fr7-oo-udH"/>
+                        <outlet property="btnRomance" destination="EOI-2M-fTP" id="8G3-4A-egK"/>
+                        <outlet property="btnSearchButton" destination="GWe-EA-2ZM" id="7Y0-pH-dxd"/>
+                        <outlet property="btnTheatreOther" destination="J1y-V2-e9w" id="gfj-PB-CEm"/>
+                        <outlet property="stackViewDates" destination="Aa7-tG-kL5" id="dq5-fK-Plt"/>
+                        <outlet property="stackViewGenres" destination="sGA-ZN-mF1" id="n5V-In-RBy"/>
+                        <outlet property="stackViewPrice" destination="Weq-a1-Tuz" id="L9b-Hd-qkA"/>
+                        <outlet property="stackViewTheatre" destination="exV-VK-BpP" id="tQa-wZ-VDo"/>
+                        <outlet property="tblTickets" destination="giu-pQ-E9p" id="kZb-xN-hk0"/>
+                        <outlet property="txtShowSearch" destination="APL-qs-hWJ" id="3ap-LR-81I"/>
+                        <outletCollection property="btnGenreButtons" destination="PQy-xY-g1U" collectionClass="NSMutableArray" id="Nwc-lw-bgq"/>
+                        <outletCollection property="btnGenreButtons" destination="c4P-kY-p4i" collectionClass="NSMutableArray" id="egD-bG-fmj"/>
+                        <outletCollection property="btnGenreButtons" destination="EOI-2M-fTP" collectionClass="NSMutableArray" id="hHB-fz-bTg"/>
+                        <outletCollection property="btnGenreButtons" destination="tmM-NG-VfN" collectionClass="NSMutableArray" id="aLT-i2-253"/>
+                        <outletCollection property="btnGenreButtons" destination="jEB-U8-nXp" collectionClass="NSMutableArray" id="a6M-IQ-eQg"/>
+                        <outletCollection property="btnGenreButtons" destination="gwl-xR-iId" collectionClass="NSMutableArray" id="GLT-fN-D8j"/>
+                        <outletCollection property="btnGenreButtons" destination="zEc-yx-3hi" collectionClass="NSMutableArray" id="ixq-3F-uor"/>
+                        <outletCollection property="btnGenreButtons" destination="tU4-Wi-tuw" collectionClass="NSMutableArray" id="4eV-6p-xet"/>
+                        <outletCollection property="btnGenreButtons" destination="Lz4-h2-3qO" collectionClass="NSMutableArray" id="b9u-Qx-WYC"/>
+                        <outletCollection property="btnPriceButtons" destination="zJm-5R-BJ8" collectionClass="NSMutableArray" id="dcm-aJ-GNT"/>
+                        <outletCollection property="btnPriceButtons" destination="cze-sk-7QL" collectionClass="NSMutableArray" id="xgH-3e-fRX"/>
+                        <outletCollection property="btnTheatreButtons" destination="hsM-HH-Y0q" collectionClass="NSMutableArray" id="gDH-XI-gpg"/>
+                        <outletCollection property="btnTheatreButtons" destination="eHA-Z5-Tgp" collectionClass="NSMutableArray" id="LiA-xw-aNV"/>
+                        <outletCollection property="btnTheatreButtons" destination="jGa-6y-Ruy" collectionClass="NSMutableArray" id="OaB-iy-tDB"/>
+                        <outletCollection property="btnTheatreButtons" destination="LWe-JU-LHe" collectionClass="NSMutableArray" id="pbo-Ye-ncP"/>
+                        <outletCollection property="btnTheatreButtons" destination="J1y-V2-e9w" collectionClass="NSMutableArray" id="fTt-Oz-abT"/>
+                        <outletCollection property="btnDatesButtons" destination="Lsm-li-FQp" collectionClass="NSMutableArray" id="tLT-gc-yDp"/>
+                        <outletCollection property="btnDatesButtons" destination="4kM-mb-d3M" collectionClass="NSMutableArray" id="LXS-iq-rWa"/>
+                        <outletCollection property="btnDatesButtons" destination="mQa-dV-0MX" collectionClass="NSMutableArray" id="pVS-2f-qMH"/>
+                        <outletCollection property="btnDatesButtons" destination="ZbP-8j-ss3" collectionClass="NSMutableArray" id="gvm-nR-uJz"/>
+                        <outletCollection property="allStackViewsInHomepage" destination="sGA-ZN-mF1" collectionClass="NSMutableArray" id="gvv-bj-tCc"/>
+                        <outletCollection property="allStackViewsInHomepage" destination="Weq-a1-Tuz" collectionClass="NSMutableArray" id="MBT-td-6tU"/>
+                        <outletCollection property="allStackViewsInHomepage" destination="Aa7-tG-kL5" collectionClass="NSMutableArray" id="cLY-b6-b0M"/>
+                        <outletCollection property="allStackViewsInHomepage" destination="exV-VK-BpP" collectionClass="NSMutableArray" id="AzW-n6-m0w"/>
+                        <segue destination="Quq-Dv-19Z" kind="presentation" identifier="homepageToProfile" id="p6B-AF-HEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XK8-xG-mIl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730.43478260869574" y="709.23913043478262"/>
+        </scene>
+        <!--CreateAccountViewController-->
+        <scene sceneID="LL4-Nh-tTs">
+            <objects>
+                <viewController storyboardIdentifier="CreateAccountViewController" title="CreateAccountViewController" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3wy-ba-tBL" customClass="CreateAccountViewController" customModule="Ticket_App_SAT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ajG-jO-l3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CREATE YOUR ACCOUNT:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us2-Xl-xg0">
+                                <rect key="frame" x="16" y="309" width="344" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zc2-4k-2Sg">
+                                <rect key="frame" x="167" y="375" width="192" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iId-JC-FTm">
+                                <rect key="frame" x="167" y="447" width="192" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oag-cB-xDh">
+                                <rect key="frame" x="33" y="380" width="128" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w9-Ib-4cB">
+                                <rect key="frame" x="33" y="451" width="128" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CqX-qL-l78">
+                                <rect key="frame" x="167" y="517" width="192" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WT5-Nu-hU2">
+                                <rect key="frame" x="52" y="513" width="109" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9G-J7-eVM">
+                                <rect key="frame" x="64" y="492" width="74" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o13-GQ-bhu">
+                                <rect key="frame" x="216" y="615" width="143" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Create Account">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" red="0.39545940190000001" green="0.057065227869999999" blue="0.52746456190000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnCreateAccount:" destination="3wy-ba-tBL" eventType="touchUpInside" id="j3X-2y-Fse"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MELBOURNE THEATRE SHOW TICKETS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmz-Lu-vR6">
+                                <rect key="frame" x="13" y="74" width="346" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="60"/>
+                                <color key="textColor" red="0.30562526600000001" green="0.043728249599999998" blue="0.4096931379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47D-s6-4p3">
+                                <rect key="frame" x="76" y="615" width="85" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.39607840779999998" green="0.062745101750000004" blue="0.52941179279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnBackToLogin:" destination="3wy-ba-tBL" eventType="touchUpInside" id="bwe-7j-REA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dW2-WA-aIt"/>
+                        <color key="backgroundColor" red="1" green="0.85567782879999998" blue="0.94358240609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtPasswordConfirmCreate" destination="CqX-qL-l78" id="3aS-bH-sxt"/>
+                        <outlet property="txtPasswordCreate" destination="iId-JC-FTm" id="AHU-nx-JMx"/>
+                        <outlet property="txtUsernameCreate" destination="zc2-4k-2Sg" id="wWN-fW-Kux"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="createAccountChange" modalPresentationStyle="fullScreen" id="l3q-F5-qu2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cV6-qN-nHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1307.2463768115942" y="3.2608695652173916"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mY8-bj-9zs"/>
+        <segue reference="Dd0-2p-fg0"/>
+        <segue reference="MhB-tp-3vl"/>
+        <segue reference="owl-ri-NyC"/>
+        <segue reference="l3q-F5-qu2"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="profilePicture.png" width="513" height="513"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
